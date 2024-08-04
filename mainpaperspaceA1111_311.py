@@ -308,8 +308,8 @@ def CN(ControlNet_Model, ControlNet_XL_Model):
         renamed = re.sub("_sd14v1", "-fp16", filename)
         os.rename(os.path.join(mdldir, filename), os.path.join(mdldir, renamed))
 
-    call('wget -q -O CN_models.txt https://github.com/TheLastBen/fast-stable-diffusion/raw/main/AUTOMATIC1111_files/CN_models.txt', shell=True)
-    call('wget -q -O CN_models_XL.txt https://github.com/TheLastBen/fast-stable-diffusion/raw/main/AUTOMATIC1111_files/CN_models_XL.txt', shell=True)
+    call('wget -q -O CN_models.txt https://github.com/SRagy/fast-stable-diffusion/raw/main/AUTOMATIC1111_files/CN_models.txt', shell=True)
+    call('wget -q -O CN_models_XL.txt https://github.com/SRagy/fast-stable-diffusion/raw/main/AUTOMATIC1111_files/CN_models_XL.txt', shell=True)
       
     with open("CN_models.txt", 'r') as f:
         mdllnk = f.read().splitlines()

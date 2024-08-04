@@ -4,10 +4,10 @@ torchaudio
 xformers
 
 GitPython
-Pillow
+Pillow==9.5.0
 accelerate
 
-blendmodes
+blendmodes==2022
 clean-fid
 diskcache
 einops
@@ -41,3 +41,5 @@ openai-clip
 spandrel==0.1.6 
 insightface
 basicsr
+rich
+controlnet_aux
